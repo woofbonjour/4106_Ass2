@@ -9,3 +9,5 @@ have been collected to better understand how the different factors affect the ma
 
 This dataset contains six features and the target of the classifiers would be to predict the risk level. The features are the attributes mentioned
 above. The risk level can be one of these three: high, medium,and low. Therefore, it has three classes. This dataset has no missing values.
+
+For more information on the dataset: https://archive.ics.uci.edu/dataset/863/maternal+health+risk.
