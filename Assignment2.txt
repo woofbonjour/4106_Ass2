@@ -25,6 +25,16 @@ Some ways to figure out if there are attributes that have no impact on the risk 
 
 Since the dataset is taken from a published study conducted by a professional in the field, we will conduct our study with the assumption that all attibutes are equally important. 
 
+All of the attrbiutes are continuous features. Below lists the ranges of each based on the dataset:
+- Age ranges from 10-70
+- SystolicBP ranges from 70-160
+- DiastolicBP ranges from 49-100
+- Blood Sugar ranges from 6.0-19.0
+- Body Temp ranges from 98-103
+- Heart rate ranges from 7-90
+
+Normalization of attributes often help improve performances of the algorithms. However, that is only the case when the ranges present are varied. The ranges of each attribute in this case is close to each other and there is no indication that normalizing them would have an impact on the performance. In fact, if we were to normalize, it might have the opposite affect. It could decrease the significance of the result. Therefore, we will not be normalizing the attributes.
+
 **Dataset**
 
 The dataset is a csv file with 1013 entries. Each entry in the dataset is an input given to the algorithm to train and test it. It consists seven elements:
