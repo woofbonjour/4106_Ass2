@@ -8,6 +8,30 @@ various paitents like Age, Systolic Blood Pressure, Diastolic Blood Pressure, Bl
 have been collected to better understand how the different factors affect the maternal mortality.
 
 This dataset contains six features and the target of the classifiers would be to predict the risk level. The features are the attributes mentioned
-above. The risk level can be one of these three: high, medium,and low. Therefore, it has three classes. This dataset has no missing values.
+above. The risk level can be one of these three: high, medium, and low. Therefore, it has three classes. This dataset has no missing values.
 
 For more information on the dataset: https://archive.ics.uci.edu/dataset/863/maternal+health+risk.
+
+
+**2. Feature Engineering**
+
+The dataset has six attributes that are used to determine the risk level of the patient. There is no missing data. We do not have the medical expertise or background to determine if all of the six features affect the risk level.
+
+Some ways to figure out if there are attributes that have no impact on the risk level:
+1. Consult with medical professionals or domain experts.
+2. Create a scatter plot with all the values to see a visual represntation of patterns and association of the attributes.
+3. Carry out correlation analysis of each attribute or use different statistical tests to analyze the attributes..
+4. Try different combinations of attributes to see how they affect the risk level.
+
+Since the dataset is taken from a published study conducted by a professional in the field, we will conduct our study with the assumption that all attibutes are equally important. 
+
+**Dataset**
+
+The dataset is a csv file with 1013 entries. Each entry in the dataset is an input given to the algorithm to train and test it. It consists seven elements:
+1. An integer corresponding to the age.
+2. An integer corresponding to the SystolicBP.
+3. An integer correspoding to the DiastolicBP.
+4. A float corresponding to the Blood Suger (BS).
+5. An integer correspoding to the BodyTemp.
+6. An integer correspoding to the HeartRate.
+7. The expected risk level based on the six previous attributes.
