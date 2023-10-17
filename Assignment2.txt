@@ -1,0 +1,11 @@
+**1. Classification Empirical Study**
+
+The goal of this study is to develop classifiers and document the analysis of the results. Two classification algorithm will be explored: Naive
+Bayes and Logistic Regression. These classifiers will be trained on real data and be evaluated on their predictions.
+
+The dataset we have chosen for this assignment is the data collected from a study conducted on maternal health risk. It has collected data on
+various paitents like Age, Systolic Blood Pressure, Diastolic Blood Pressure, Blood Sugar, Body Temperature, Heart Rate and Risk Level. These 
+have been collected to better understand how the different factors affect the maternal mortality.
+
+This dataset contains six features and the target of the classifiers would be to predict the risk level. The features are the attributes mentioned
+above. The risk level can be one of these three: high, medium,and low. Therefore, it has three classes. This dataset has no missing values.
