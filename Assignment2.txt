@@ -33,15 +33,28 @@ All of the attrbiutes are continuous features. Below lists the ranges of each ba
 - Body Temp ranges from 98-103
 - Heart rate ranges from 7-90
 
-Normalization of attributes often help improve performances of the algorithms. However, that is only the case when the ranges present are varied. The ranges of each attribute in this case is close to each other and there is no indication that normalizing them would have an impact on the performance. In fact, if we were to normalize, it might have the opposite affect. It could decrease the significance of the result. Therefore, we will not be normalizing the attributes.
+Normalization of attributes often help improve performances of the algorithms. However, that is only the case when the ranges present are varied. The ranges of each attribute in this case is close to each other and there is no indication that normalizing them would have an impact on the performance. In fact, if we were to normalize, it might have the opposite effect. It could decrease the significance of the result. Therefore, we will not be normalizing the attributes.
 
 **Dataset**
 
-The dataset is a csv file with 1013 entries. Each entry in the dataset is an input given to the algorithm to train and test it. It consists seven elements:
+The dataset is a CSV file with 1013 entries. Each entry in the dataset is an input given to the algorithm to train and test it. It consists of seven elements:
 1. An integer corresponding to the age.
 2. An integer corresponding to the SystolicBP.
-3. An integer correspoding to the DiastolicBP.
+3. An integer corresponding to the DiastolicBP.
 4. A float corresponding to the Blood Suger (BS).
-5. An integer correspoding to the BodyTemp.
-6. An integer correspoding to the HeartRate.
-7. The expected risk level based on the six previous attributes.
+5. An integer corresponding to the BodyTemp.
+6. An integer corresponding to the HeartRate.
+7. The expected risk level is based on the six previous attributes.
+
+
+3. Encoding Features
+
+As you will use models that need discrete or continuous attributes, think about data encoding and transformation.
+
+Logistic regression:
+
+This classifier expects continuous attributes. Since all of our attributes are continuous, there is no need to carry out encoding or transformation techniques.
+
+Naive Bayes:
+
+This classifier expects discrete attributes. CategoricalNB and GaussianNB are two of several classifiers in scikitlearn. CategoricalNB expects discrete attributes whereas GaussianNB expects continuous attributes. The attributes need to be transformed/discretized in order to use CategoricalNB. There would be no need for transformation when using GaussianNB.
